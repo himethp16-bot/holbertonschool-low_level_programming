@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * print_numbers - prints numbers 0 to 9 followed by new line
  *
  * Return: Always 0

@@ -1,6 +1,8 @@
 #include "main.h"
 /**
+ * jack_bauer - print all minutes and hours of the day
  *
+ * Return: void
  */
 void jack_bauer(void)
 {

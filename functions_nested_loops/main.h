@@ -3,9 +3,6 @@
 
 #include <stdio.h>
 
-int _putchar(char c)
-{
-	return (fwrite(&c, 1, 1, stdout) == 1 ? (unsigned char)c : -1);
-}
+int _putchar(char c);
 
 #endif

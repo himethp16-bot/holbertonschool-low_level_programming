@@ -1,14 +1,36 @@
 #include <stdio.h>
 /**
- * 
+ * print_to_98 - prints all natural nums n to 98
+ *
+ * @n: int val
+ *
+ * Return: n to 98
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
-	while (n <= 98)
+	if (n <= 98)
 	{
-		printf("%d ", n);
-		n++;
+		while (n <= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(",");
+			}
+			n++;
+		}
 	}
-	return (0);
+	else
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+	}
+	printf("\n");
 }
-

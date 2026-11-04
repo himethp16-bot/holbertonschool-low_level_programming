@@ -13,7 +13,7 @@ void times_table(void)
 	int prod;
 
 	row = 0;
-	while (row <=9)
+	while (row <= 9)
 	{
 		_putchar('0');
 

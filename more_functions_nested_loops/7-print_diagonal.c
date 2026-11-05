@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int i;
 
@@ -19,7 +19,7 @@ void print_diagonal(int n);
 	i = 0;
 	while (i < n)
 	{
-		_putchar('\');
+		_putchar('\\');
 		i++;
 	}
 	_putchar('\n');

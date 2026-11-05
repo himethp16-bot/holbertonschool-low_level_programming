@@ -17,14 +17,13 @@ void print_triangle(int size)
 		return;
 	}
 
-	i = 0;
+	i = 1;
 	while (i <= size)
 	{
 		j = 0;
 		while (j < i)
 		{
 			_putchar('#');
-			_putchar(' ');
 			j++;
 		}
 		_putchar('\n');

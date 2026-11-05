@@ -18,14 +18,13 @@ void print_square(int size)
 	i = 0;
 	while (i < size)
 	{
+		_putchar('#');
 		j = 0;
 		while (j < i)
 		{
-			_putchar(' ');
-			j++;
+			_putchar('\n');
 		}
-		_putchar('#');
-		_putchar('\n');
+		j++;
 		i++;
 	}
 }

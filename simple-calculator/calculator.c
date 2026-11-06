@@ -18,7 +18,10 @@ int main(void)
 
 	scanf("%d", &option);
 
-	if (option == 0)
+	if (option < 0 || option > 4)
+		printf("Invalid Choice\n");
+
+	else if (option == 0)
 		printf("Bye!\n");
 
 	return (0);

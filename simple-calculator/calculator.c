@@ -35,6 +35,24 @@ void sub(int option)
 	}
 }
 /**
+ * prod - multiplication outcome of two integers
+ * @option: finds user input
+ *
+ * Return: Always 0
+ */
+void prod(int option)
+{
+	int A, B, prod;
+
+	if (option == 3)
+	{
+		printf("Enter two integers, A: B:\n");
+		scanf("%d %d", &A, &B);
+		prod = A * B;
+		printf("%d x %d = %d\n", A, B, prod);
+	}
+}
+/**
  * main - entry point
  *
  * Return: Always 0
@@ -54,6 +72,7 @@ int main(void)
 	scanf("%d", &option);
 	sum(option);
 	sub(option);
+	prod(option);
 
 		if (option < 0 || option > 4)
 		{

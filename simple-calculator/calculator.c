@@ -53,6 +53,30 @@ void prod(int option)
 	}
 }
 /**
+ * div - divides two provided integers
+ * @option: checks for user input
+ *
+ * Return: Always 0
+ */
+void div(int option)
+{
+	float A, B, div;
+
+	if (option == 4)
+	{
+		printf("Enter two integers, A: B:\n");
+		scanf("%f %f", &A, &B);
+		if (B == 0)
+		{
+			printf("Error: division by zero\n");
+			return;
+		}
+		else
+		div = A / B;
+		printf("%.0f / %.0f = %.2f\n", A, B, div);
+	}
+}
+/**
  * main - entry point
  *
  * Return: Always 0
@@ -73,6 +97,7 @@ int main(void)
 	sum(option);
 	sub(option);
 	prod(option);
+	div(option);
 
 		if (option < 0 || option > 4)
 		{

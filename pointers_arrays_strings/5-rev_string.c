@@ -12,9 +12,9 @@ void rev_string(char *s)
 	int i;
 	char temp;
 
-	if (s == NULL)
+	if (*s == '\0')
 	{
-		return (0);
+		return;
 	}
 
 	while (s[len] != '\0')

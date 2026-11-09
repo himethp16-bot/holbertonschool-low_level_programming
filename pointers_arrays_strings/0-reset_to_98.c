@@ -1,15 +1,12 @@
 #include "main.h"
 /**
- * main - entry point
+ * reset_to_98 - Resets n to 98
+ * @n: is a pointer to an int
  *
  * Return: Always 0
- * /
-int main(void)
+ */
+
+void reset_to_98(int *n)
 {
-	int n;
-	int *p;
-
-	*p = &n;
-
-	*p = 98;
+	*n = 98
 }

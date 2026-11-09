@@ -1,6 +1,9 @@
 #include "main.h"
 /**
+ * puts2 - prints every 2nd character in a string
+ * @str: pointer to a string
  *
+ * Return: void
  */
 
 void puts2(char *str)
@@ -12,7 +15,6 @@ void puts2(char *str)
 	{
 		len++;
 	}
-	
 	i = 0;
 
 	while (i < len)
@@ -20,4 +22,5 @@ void puts2(char *str)
 		_putchar(str[i]);
 		i += 2;
 	}
+	_putchar('\n')
 }

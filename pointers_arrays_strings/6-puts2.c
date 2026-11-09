@@ -1,0 +1,23 @@
+#include "main.h"
+/**
+ *
+ */
+
+void puts2(char *str)
+{
+	int len = 0;
+	int i;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	
+	i = 0;
+
+	while (i < len)
+	{
+		_putchar(str[i]);
+		i += 2;
+	}
+}

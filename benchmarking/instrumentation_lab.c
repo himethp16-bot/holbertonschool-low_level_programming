@@ -96,10 +96,10 @@ int main(void)
      * PROCESS seconds: <float>
      * REDUCE seconds: <float>
      */
-    printf("TOTAL seconds: %.6f", total_time);
-    printf("BUILD_DATA seconds: %.6f", build_time);
-    printf("PROCESS seconds; %.6f", process_time);
-    printf("REDUCE seconds: %.6f", reduce_time);
+    printf("TOTAL seconds: %.6f\n", total_time);
+    printf("BUILD_DATA seconds: %.6f\n", build_time);
+    printf("PROCESS seconds; %.6f\n", process_time);
+    printf("REDUCE seconds: %.6f\n", reduce_time);
 
     return 0;
 }

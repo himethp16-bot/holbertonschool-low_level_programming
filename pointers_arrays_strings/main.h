@@ -29,5 +29,6 @@ int _strelen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
+void puts2(char *str);
 
 #endif

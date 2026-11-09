@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void puts_half(char *str)
+void puts_half(char *str);
 {
 	int len = 0;
 	int i;
@@ -22,4 +22,5 @@ void puts_half(char *str)
 		_putchar(str[i]);
 		i++;
 	}
+	_putchar('\n');
 }

@@ -4,7 +4,7 @@
  * @dest: is the pointer to the destination for copied string
  * @src: is the pointer to the source string
  *
- * Return: void
+ * Return: destination
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -15,4 +15,5 @@ char *_strcpy(char *dest, char *src)
 		src++;
 	}
 	*dest = '\0';
+	return (dest);
 }

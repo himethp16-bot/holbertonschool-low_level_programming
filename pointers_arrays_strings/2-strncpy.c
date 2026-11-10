@@ -1,23 +1,32 @@
 #include "main.h"
 /**
  * *_strncpy - copy a string to a destination based on n
- * @dest: pointer to destination string 
+ * @dest: pointer to destination string
  * @src: pointer to source string
+ * @n: input value
  *
  * Return: destination
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i; 
+	int i;
+	char *start;
 
 	i = 0;
+	*start = dest;
 
 	while (i < n && *src != '\0')
 	{
 		*dest = *src;
 		dest++;
 		src++;
+		i++;
 	}
-	*dest = '\0';
-	return (dest);
+	while (i < n)
+	{
+		*dest = '\0';
+		dest++;
+		i++;
+	}
+	return (start);
 }

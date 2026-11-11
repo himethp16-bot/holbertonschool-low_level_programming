@@ -21,18 +21,16 @@ char *cap_string(char *str)
 
 		while (separators[j] != '\0')
 		{
-			if (str[i] == separators [j])
+			if (str[i] == separators[j])
 			{
-				if (str[i + 1] >= 'a' && str [i + 1] <= 'z')
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				{
 					str[i + 1] -= 32;
 				}
-				
 			}
 			j++;
 		}
 		i++;
-		
 	}
 	return (str);
 }

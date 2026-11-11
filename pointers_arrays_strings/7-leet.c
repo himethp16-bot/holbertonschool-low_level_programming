@@ -5,7 +5,7 @@
  *
  * Return: string with letters converted to numbers
  */
-char *leet(char *str);
+char *leet(char *str)
 {
 	int i, j;
 	char letters[] = "aAeEoOtTlL";

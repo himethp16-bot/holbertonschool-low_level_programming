@@ -8,23 +8,31 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-	int cap_word = 1;
+	int j;
 	char separators[] = "\t\n,;.!?\"(){}";
 
 	while (str[i] != '\0')
 	{
-		if (str[i] == separators[])
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
 		{
-			cap_word = 1;
+			str[i] -= 32;
 		}
-		else if (cap_word && (str[i] >= 'a' && str[i] <= 'z'))
+		j = 0;
+
+		while (separators[j] != '\0')
 		{
-			cap_word = 0;
+			if (str[i] == separators [j])
+			{
+				if (str[i + 1] >= 'a' && str [i + 1] <= 'z')
+				{
+					str[i + 1] -= 32;
+				}
+				
+			}
+			j++;
 		}
-		else
-		{
-			cap_word = 0;
-		}
+		i++;
+		
 	}
 	return (str);
 }

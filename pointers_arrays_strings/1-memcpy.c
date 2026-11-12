@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *memcpy - copies memory to n amount of bytes
+ * *_memcpy - copies memory to n amount of bytes
  * @dest: pointer to destinationg string
  * @src: pointer to source string
  * @n: amount of bytes to be copied

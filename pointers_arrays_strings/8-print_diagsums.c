@@ -9,32 +9,19 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum = 0, n = 0, matrix[*a][size];
+	int i;
+	int sum1;
+	int sum2;
 
-	if (*a == size)
+	i = 0;
+	sum1 = 0;
+	sum2 = 0;
+
+	while (i < size)
 	{
-		i  = 0;
-
-		while (i < *a)
-		{
-			j = 0;
-
-			while (j < size)
-			{
-				printf(" %d", matrix[i][j]);
-				j++;
-			}
-			printf("\n");
-			i++;
-		}
-		i = 0;
-
-		while (i < *a)
-		{
-			sum = sum + matrix[i][i];
-			n = n + matrix[i][a* - i - 1];
-			i++;
-		}
-		printf("%d, %d", sum, n);
+		sum1 += a[i * size + i];
+		sum2 += a[i * size + (size - 1 - i)];
+		i++;
 	}
+	printf("%d, %d\n", sum1, sum2);
 }

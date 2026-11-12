@@ -5,13 +5,13 @@
  *
  * Return: a chessboard
  */
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
-	int i; 
+	int i;
 
 	i = 0;
 
-	while (a[i] != '\0' && [0] > [8])
+	while (a[i] != '\0' &&[0] >[8])
 	{
 		_putchar(a[i][]);
 		i++;

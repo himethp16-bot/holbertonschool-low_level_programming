@@ -1,7 +1,7 @@
-#include "main.h" 
+#include "main.h"
 /**
  * _strspn - measures the length of the string up to the first match
- * @s: pointer to a string 
+ * @s: pointer to a string
  * @accept: pointer to a string to be compared
  *
  * Return: Count
@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		while (accept[j] != '\0')
 		{
-			if (s[i] == accept [j])
+			if (s[i] == accept[j])
 			{
 				match = 1;
 				break;

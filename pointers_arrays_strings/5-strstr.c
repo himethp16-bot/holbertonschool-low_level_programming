@@ -2,7 +2,7 @@
 /**
  * *_strstr - Locates a substring within a string
  * @haystack: the string to search inside
- * @needle: the substring to look for 
+ * @needle: the substring to look for
  *
  * Return: pointer to the beginning of the located substring or 0 if not found
  */
@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 
 		while (needle[j] != '\0')
 		{
-			if (haystack [i + j] != needle[j])
+			if (haystack[i + j] != needle[j])
 			{
 				break;
 			}
@@ -37,5 +37,3 @@ char *_strstr(char *haystack, char *needle)
 	}
 	return (0);
 }
-		
-		

@@ -9,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum = 0, n = 0, int matrix [*a][size];
+	int i, j, sum = 0, n = 0, matrix[*a][size];
 
 	if (*a == size)
 	{
@@ -32,7 +32,7 @@ void print_diagsums(int *a, int size)
 		while (i < *a)
 		{
 			sum = sum + matrix[i][i];
-			n = n + matrix[i][m - i - 1];
+			n = n + matrix[i][a* - i - 1];
 			i++;
 		}
 		printf("%d, %d", sum, n);

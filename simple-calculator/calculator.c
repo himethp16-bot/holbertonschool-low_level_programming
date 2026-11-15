@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * sum - addition of two integers
- * Return: Always 0
+ *
+ * Return: Total after sum
  */
 void sum(void)
 {
@@ -15,7 +16,7 @@ void sum(void)
 /**
  * sub - subtraction of two integers
  *
- * Return: Always 0
+ * Return: Total after subtraction
  */
 void sub(void)
 {
@@ -29,7 +30,7 @@ void sub(void)
 /**
  * prod - multiplication outcome of two integers
  *
- * Return: Always 0
+ * Return: Total after multiplication
  */
 void prod(void)
 {
@@ -43,7 +44,7 @@ void prod(void)
 /**
  * div - divides two provided integers
  *
- * Return: Always 0
+ * Return: Total after division
  */
 void div(void)
 {

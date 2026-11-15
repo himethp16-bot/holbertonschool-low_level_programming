@@ -69,37 +69,42 @@ int main(void)
 {
 	int option;
 
-	printf("Simple Calculator\n"
-		"1) Add\n"
-		"2) Subtract\n"
-		"3) Multiply\n"
-		"4) Divide\n"
-		"0) Quit\n");
-	printf("Choose an option?\n");
-	scanf("%d", &option);
-	if (option < 0 || option > 4)
+	option = -1;
+
+	while (option != 0)
 	{
-		printf("Invalid Choice\n");
-	}
-	else if (option == 0)
-	{
-		printf("Bye!\n");
-	}
-	else if (option == 1)
-	{
-		sum();
-	}
-	else if (option == 2)
-	{
-		sub();
-	}
-	else if (option == 3)
-	{
-		prod();
-	}
-	else if (option == 4)
-	{
-		div();
+		printf("Simple Calculator\n"
+			"1) Add\n"
+			"2) Subtract\n"
+			"3) Multiply\n"
+			"4) Divide\n"
+			"0) Quit\n");
+		printf("Choose an option?\n");
+		scanf("%d", &option);
+		if (option < 0 || option > 4)
+		{
+			printf("Invalid Choice\n");
+		}
+		else if (option == 0)
+		{
+			printf("Bye!\n");
+		}
+		else if (option == 1)
+		{
+			sum();
+		}
+		else if (option == 2)
+		{
+			sub();
+		}
+		else if (option == 3)
+		{
+			prod();
+		}
+		else if (option == 4)
+		{
+			div();
+		}
 	}
 	return (0);
 }

@@ -10,8 +10,7 @@
 int *array_range(int min, int max)
 {
 	int *arr;
-	unsigned int i;
-	int total_size;
+	unsigned int i, total_size;
 
 	total_size = max - min + 1;
 

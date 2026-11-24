@@ -25,7 +25,7 @@ void print_uppercase(char *name)
 {
 	while (*name != '\0')
 	{
-		if (*name >= 'a' && <= 'z')
+		if (*name >= 'a' && *name <= 'z')
 		{
 			_putchar(*name - 32);
 		}

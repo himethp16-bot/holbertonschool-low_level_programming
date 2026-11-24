@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	if ((*op == '/' || *op == '%') && num2 == 0)
 	{
 		printf("Error\n");
-		exit(100)
+		exit(100);
 	}
 
 	printf("%d\n", func(num1, num2));

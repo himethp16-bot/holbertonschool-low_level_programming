@@ -31,6 +31,12 @@ void print_f(va_list arg)
 {
 	printf("%f", va_arg(arg, double));
 }
+/**
+ * print_s - prints a string
+ * @arg: va_list containing a string
+ *
+ * Return: void
+ */
 void print_s(va_list arg)
 {
 	char *str = va_arg(arg, char *);

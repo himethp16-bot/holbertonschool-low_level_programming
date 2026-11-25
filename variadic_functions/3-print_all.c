@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+#include <stdarg.g>
 /**
  * struct printer - Maps a format specifier to its print function.
  * @symbol: The format character ('c', 'i', 'f', 's').
@@ -57,7 +58,7 @@ void print_all(const char * const format, ...)
 		while (j < 4 && format[i] != *(funcs[j].symbol))
 			j++;
 
-		if(j < 4)
+		if (j < 4)
 		{
 			printf("%s", separator);
 			funcs[j].print(args);

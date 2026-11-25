@@ -51,14 +51,14 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 	char *sep = "";
 	char types[] = {'c', 'i', 'f', 's', '\0'};
-	void (*funcs[])(va_list) = {print_c, print_i, print_f, Print_s};
+	void (*funcs[])(va_list) = {print_c, print_i, print_f, print_s};
 
 	va_start(args, format);
 
 	while (format && format[i])
 	{
 		j = 0;
-		while (typers[j])
+		while (types[j])
 		{
 
 			if (format[i] == types[j])

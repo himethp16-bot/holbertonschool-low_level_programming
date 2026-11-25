@@ -29,7 +29,7 @@ void print_i(va_list arg)
  */
 void print_f(va_list arg)
 {
-	printf("%f", va_arg(arg, double)):
+	printf("%f", va_arg(arg, double));
 }
 void print_s(va_list arg)
 {
@@ -49,26 +49,26 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, j = 0;
-	char *separator = "";
-	printer_t funcs[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string}
-	};
+	char *sep = "";
+	char types[] = {'c', 'i', 'f', 's', '\0'};
+	void (*funcs[])(va_list) = {print_c, print_i, print_f, Print_s};
 
 	va_start(args, format);
+
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4 && format[i] != *(funcs[j].symbol))
-			j++;
-
-		if (j < 4)
+		while (typers[j])
 		{
-			printf("%s", separator);
-			funcs[j].print(args);
-			separator = ", ";
+
+			if (format[i] == types[j])
+			{
+				printf("%s", sep);
+				funcs[j](args);
+				sep = ", ";
+				break;
+			}
+			j++;
 		}
 		i++;
 	}

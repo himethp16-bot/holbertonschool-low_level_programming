@@ -27,7 +27,7 @@ void print_i(va_list arg)
  *
  * Return: void
  */
-void print_f(va_listarg)
+void print_f(va_list arg)
 {
 	printf("%f", va_arg(arg, double)):
 }

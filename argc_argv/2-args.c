@@ -1,6 +1,7 @@
 #include "main.h"
-/** main - prints all arguments it receives
- * @argc: count of command line arguments 
+/**
+ * main - prints all arguments it receives
+ * @argc: count of command line arguments
  * @argv: array of command line arguments
  *
  * Return: Always 0
@@ -9,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int i, j;
 
-	i = 0; 
+	i = 0;
 
 	while (i < argc)
 	{

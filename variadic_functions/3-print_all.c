@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.g>
+#include <stdarg.h>
 /**
  * struct printer - Maps a format specifier to its print function.
  * @symbol: The format character ('c', 'i', 'f', 's').

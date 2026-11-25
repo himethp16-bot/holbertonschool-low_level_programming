@@ -12,12 +12,7 @@ int main(int argc, char *argv[])
 
 	(void)argv;
 	i = 0;
-
-	while (i < argc)
-	{
-		_putchar(argc);
-		i++;
-	}
+	_putchar(argc - 1);
 	_putchar('\n');
 	return (0);
 }
